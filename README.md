@@ -6,3 +6,5 @@
 [![Github Actions](https://github.com/Dmitry-Zhiryakov/python-project-lvl1/actions/workflows/github_actions.yml/badge.svg)](https://github.com/Dmitry-Zhiryakov/python-project-lvl1/actions/workflows/github_actions.yml)
 
 https://asciinema.org/a/XguMfMfnuN5pplXEq2IvsMsqr
+
+[![asciicast](https://asciinema.org/a/BEtMChvqeK8g92mmTgY5HkKcr.svg)](https://asciinema.org/a/BEtMChvqeK8g92mmTgY5HkKcr)
