@@ -1,7 +1,7 @@
 import random
 
 
-def task(): 
+def task():
     return print('What is the result of the expression?')
 
 

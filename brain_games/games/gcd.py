@@ -1,7 +1,7 @@
 import random
 
 
-def task(): 
+def task():
     return print('Find the greatest common divisor of given numbers.')
 
 
