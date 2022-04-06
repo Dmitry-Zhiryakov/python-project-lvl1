@@ -15,7 +15,7 @@ def engine_games(get_task_description, game_logic, calculate_result):
             print('Correct!')
             counter += 1
         else:
-            print('{} is wrong answer ;(. Correct answer was {}'.format(user_answer, correct_answer))
+            print('\'{}\' is wrong answer ;(. Correct answer was \'{}\''.format(user_answer, correct_answer))
             print('Let\'s try again, {}'.format(user_name))
             break
     if counter == 3:
