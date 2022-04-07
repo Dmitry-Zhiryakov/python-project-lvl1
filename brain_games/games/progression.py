@@ -1,17 +1,17 @@
-import random
+from random import randint, choice
 
 
-def task():
+def get_task_description():
     return print('What number is missing in the progression?')
 
 
-def ask_question_and_get_correct_answer():
-    begin_of_progression = random.randint(1, 20)
+def get_correct_answer():
+    begin_of_progression = randint(1, 20)
     range_progression_step = (2, 3, 5)
-    progression_step = random.choice(range_progression_step)
+    progression_step = choice(range_progression_step)
     progression = ''
     hidden_value = 0
-    hidden_index = random.randint(0, 9)
+    hidden_index = randint(0, 9)
     counter = 0
     while counter < 10:
         progression_item = begin_of_progression + (counter * progression_step)
@@ -27,5 +27,5 @@ def ask_question_and_get_correct_answer():
     return hidden_value
 
 
-def calculate_result(correct_answer, user_answer):
+def calculate_the_result(correct_answer, user_answer):
     return str(correct_answer) == user_answer
