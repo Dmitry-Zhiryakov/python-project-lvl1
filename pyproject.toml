@@ -1,15 +1,18 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
-
+description = "Brain-games package is a collection of easy math games."
+authors = ["Dmitry Zhiryakov <dmitry_zhiryakov@mail.ru>"]
+repository = "https://github.com/Dmitry-Zhiryakov/python-project-lvl1"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+    "Topic :: Education project"
+]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8"
 prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
