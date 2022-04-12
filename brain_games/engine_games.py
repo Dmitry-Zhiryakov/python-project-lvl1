@@ -18,7 +18,7 @@ def engine_games(get_task_description, get_correct_answer, calculate_result):
         else:
             print('\'{}\' is wrong answer ;(. \
 Correct answer was \'{}\''.format(user_answer, correct_answer))
-            print('Let\'s try again, {}'.format(user_name))
+            print('Let\'s try again, {}!'.format(user_name))
             break
     if counter == count_of_rounds:
         print('Congratulations, {}!'.format(user_name))
