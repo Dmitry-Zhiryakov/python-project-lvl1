@@ -1,18 +1,20 @@
 import prompt
 
 
-def engine_games(get_task_description, get_correct_answer, calculate_result):
+COUNT_OF_ROUNDS = 3
+
+
+def engine_games(task_description, get_question_and_correct_answer):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(user_name))
-    get_task_description()
-    count_of_rounds = 3
+    print(task_description)
     counter = 0
-    while counter < count_of_rounds:
-        correct_answer = get_correct_answer()
+    while counter < COUNT_OF_ROUNDS:
+        question, correct_answer = get_question_and_correct_answer()
+        print('Question: {}'.format(question))
         user_answer = prompt.string('Your answer: ')
-        result = calculate_result(correct_answer, user_answer)
-        if result is True:
+        if str(correct_answer) == user_answer:
             print('Correct!')
             counter += 1
         else:
@@ -20,5 +22,5 @@ def engine_games(get_task_description, get_correct_answer, calculate_result):
 Correct answer was \'{}\''.format(user_answer, correct_answer))
             print('Let\'s try again, {}!'.format(user_name))
             break
-    if counter == count_of_rounds:
+    if counter == COUNT_OF_ROUNDS:
         print('Congratulations, {}!'.format(user_name))

@@ -1,16 +1,11 @@
 from random import randint, choice
 
 
-def get_task_description():
-    return print('What is the result of the expression?')
+task_description = 'What is the result of the expression?'
+ARITHMETIC_OPERATION = ['+', '-', '*']
 
 
-def get_correct_answer():
-    arithmetic_operations = ['+', '-', '*']
-    operator = choice(arithmetic_operations)
-    number_1 = randint(0, 10)
-    number_2 = randint(0, 10)
-    print('Question: {} {} {}'.format(number_1, operator, number_2))
+def calculate(number_1, operator, number_2):
     if operator == '+':
         return number_1 + number_2
     if operator == '-':
@@ -19,5 +14,10 @@ def get_correct_answer():
         return number_1 * number_2
 
 
-def calculate_the_result(correct_answer, user_answer):
-    return str(correct_answer) == user_answer
+def get_question_and_correct_answer():
+    operator = choice(ARITHMETIC_OPERATION)
+    number_1 = randint(0, 10)
+    number_2 = randint(0, 10)
+    question = '{} {} {}'.format(number_1, operator, number_2)
+    correct_answer = calculate(number_1, operator, number_2)
+    return question, correct_answer

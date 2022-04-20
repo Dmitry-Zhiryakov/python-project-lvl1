@@ -2,23 +2,23 @@ from random import randint
 from math import sqrt
 
 
-def get_task_description():
-    return print('Answer "yes" if given number is prime. \
-Otherwise answer "no".')
+task_description = 'Answer "yes" if given number is prime. \
+Otherwise answer "no".'
 
 
-def get_correct_answer():
-    given_number = randint(2, 50)
+def is_prime(given_number):
     counter = 0
     for i in range(2, int(sqrt(given_number) + 1)):
         if given_number % i == 0:
             counter += 1
-    print('Question: {}'.format(given_number))
-    if counter == 0:
-        return 'yes'
+    return counter == 0
+
+
+def get_question_and_correct_answer():
+    given_number = randint(2, 50)
+    question = given_number
+    if is_prime(given_number):
+        correct_answer = 'yes'
     else:
-        return 'no'
-
-
-def calculate_the_result(correct_answer, user_answer):
-    return correct_answer == str(user_answer)
+        correct_answer = 'no'
+    return question, correct_answer
