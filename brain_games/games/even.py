@@ -1,11 +1,13 @@
 from random import randint
 
 
-task_description = 'Answer "yes" if the number is even, otherwise answer "no".'
+TASK_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+BEGIN_RANGE_NUMBER = 0
+END_RANGE_NUMBER = 100
 
 
 def get_question_and_correct_answer():
-    random_number = randint(0, 100)
+    random_number = randint(BEGIN_RANGE_NUMBER, END_RANGE_NUMBER)
     question = '{}'.format(random_number)
     if random_number % 2 == 0:
         correct_answer = 'yes'
