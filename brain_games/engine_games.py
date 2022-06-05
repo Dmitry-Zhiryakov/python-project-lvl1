@@ -1,16 +1,16 @@
 import prompt
 
 
-COUNT_OF_ROUNDS = 3
+ROUNDS_COUNT = 3
 
 
-def engine_games(TASK_DESCRIPTION, get_question_and_correct_answer):
+def engine_games(task_description, get_question_and_correct_answer):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print('Hello, {}!'.format(user_name))
-    print(TASK_DESCRIPTION)
+    print(task_description)
     counter = 0
-    while counter < COUNT_OF_ROUNDS:
+    while counter < ROUNDS_COUNT:
         question, correct_answer = get_question_and_correct_answer()
         print('Question: {}'.format(question))
         user_answer = prompt.string('Your answer: ')
