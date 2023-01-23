@@ -4,31 +4,41 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/edc43778536664726a54/maintainability)](https://codeclimate.com/github/Dmitry-Zhiryakov/python-project-lvl1/maintainability)
 [![Github Actions](https://github.com/Dmitry-Zhiryakov/python-project-lvl1/actions/workflows/github_actions.yml/badge.svg)](https://github.com/Dmitry-Zhiryakov/python-project-lvl1/actions/workflows/github_actions.yml)
 
-# Игры разума
+# Brain Games
 
-«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. 
+«Brain Games» — a set of five console games built on the principle of popular mobile applications for brain pumping. Each game asks questions that need to be answered correctly. After three correct answers, it is considered that the game is over. Incorrect answers end the game and offer to go through it again.
 
-### Установка и первый запуск 
+### Install the package and run
 
-[![asciicast](https://asciinema.org/a/HucbxeVenqFwpQAmz3gjk3syL.svg)](https://asciinema.org/a/HucbxeVenqFwpQAmz3gjk3syL)
+```make package-install```
+[![asciicast](https://asciinema.org/a/Hlw70lc0UAIV3PccVM0xNdSdR.svg)](https://asciinema.org/a/Hlw70lc0UAIV3PccVM0xNdSdR)
 
-### Игры:
-1. Калькулятор. Игроку показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
+### Games:
 
-[![asciicast](https://asciinema.org/a/BEtMChvqeK8g92mmTgY5HkKcr.svg)](https://asciinema.org/a/BEtMChvqeK8g92mmTgY5HkKcr)
+```brain-calc``` - Calculator
+```brain-progression``` - Progression
+```brain-even``` - Definition of an even number
+```brain-gcd``` - Finding the Greatest Common Divisor
+```brain-prime``` - Definition of a prime number
 
-2. Прогрессия. Игроку показывается ряд чисел, образующий арифметическую прогрессию. Нужно определить пропущенное число, замененное двумя точкам.
+### Demonstration:
 
-[![asciicast](https://asciinema.org/a/ekfNSCiff2sxkczrD1e9GE9Jm.svg)](https://asciinema.org/a/ekfNSCiff2sxkczrD1e9GE9Jm)
+1. Calculator. The player is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.
 
-3. Определение четного числа. Игроку показывается случайное число, и ему нужно ответить 'yes', если число чётное, или 'no' — если нечётное.
+[![asciicast](https://asciinema.org/a/rOwFEkJsPNDsnDmvcv56nkA5L.svg)](https://asciinema.org/a/rOwFEkJsPNDsnDmvcv56nkA5L)
 
-[![asciicast](https://asciinema.org/a/Z6sFS8GBnjvxEQWId5YDwjolj.svg)](https://asciinema.org/a/Z6sFS8GBnjvxEQWId5YDwjolj)
+2. Progression. The player is shown a series of numbers forming an arithmetic progression. It is necessary to determine the missing number, replaced by two dots.
 
-4. Определение наибольшего общего делителя. Игроку показывается два случайных числа, например, '25 50'. Игрок должен вычислить и ввести наибольший общий делитель этих чисел.
+[![asciicast](https://asciinema.org/a/s3EYS7RirmZ9tWOpAUjGH97eU.svg)](https://asciinema.org/a/s3EYS7RirmZ9tWOpAUjGH97eU)
 
-[![asciicast](https://asciinema.org/a/B2wBtd1TCIWdM6spnPreuOQpo.svg)](https://asciinema.org/a/B2wBtd1TCIWdM6spnPreuOQpo)
+3. Definition of an even number. The player is shown a random number and needs to answer 'yes' if the number is even, or 'no' if it's odd.
 
-5. Определение простого числа. Игроку показывается случайное число, и ему нужно ответить 'yes', если число простое. В противном случае нужно ответить 'no'.
+[![asciicast](https://asciinema.org/a/C2RQeg5Is05d545vesH0Ua7xj.svg)](https://asciinema.org/a/C2RQeg5Is05d545vesH0Ua7xj)
 
-[![asciicast](https://asciinema.org/a/SUVMzGIcqHLcuixBAorWtnsTh.svg)](https://asciinema.org/a/SUVMzGIcqHLcuixBAorWtnsTh)
+4. Finding the Greatest Common Divisor. The player is shown two random numbers, eg '25 50'. The player must calculate and enter the greatest common divisor of these numbers.
+
+[![asciicast](https://asciinema.org/a/Rgp8boeJBtOajKeXW9lTPpEmN.svg)](https://asciinema.org/a/Rgp8boeJBtOajKeXW9lTPpEmN)
+
+5. Definition of a prime number. The player is shown a random number and needs to answer 'yes' if the number is prime. Otherwise, 'no' should be answered.
+
+[![asciicast](https://asciinema.org/a/wvweybDdEblCrCRzlJ1OxRXtV.svg)](https://asciinema.org/a/wvweybDdEblCrCRzlJ1OxRXtV)
