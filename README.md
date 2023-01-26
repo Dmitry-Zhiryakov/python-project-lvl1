@@ -10,65 +10,72 @@
 
 ## Installation:
 
-### Use the package manager pip:
+### Using pip [(Demonstration)](https://asciinema.org/a/Mudh1GPExqwiCLLQUjIaZpGIn):
 
-    pip install --user git+https://github.com/Dmitry-Zhiryakov/python-project-lvl1.git
+```
+pip install --user git+https://github.com/Dmitry-Zhiryakov/python-project-lvl1.git
+```
 
-## Or
-### Clone repository and use poetry:
+### Clone repository and use poetry [(Demonstration)](https://asciinema.org/a/wjU0lPlmn0aot2al5FP8gcYhX):
 
-Clone repository `git clone https://github.com/Dmitry-Zhiryakov/python-project-lvl1.git`
+Clone repository:
 
-Install dependencies `make install`
+```
+git clone https://github.com/Dmitry-Zhiryakov/python-project-lvl1.git
+```
 
-Build the package `make build`
+Run `poetry lock --no-update` to sync dependencies at poetry.lock and pyproject.toml files:
 
-Install package `make package-install`
+```
+poetry lock --no-update
+```
+
+Install dependencies:
+
+```
+make install
+```
+
+Build the package:
+
+```
+make build
+```
+
+Install the package:
+
+```
+make package-install
+```
 
 ## Games:
 
-1. **Calculator.** The player is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.  
+1. `brain-calc` (Calculator). The player is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down. [(Demonstration)](https://asciinema.org/a/rOwFEkJsPNDsnDmvcv56nkA5L)
 
-    Run the command `brain-calc` to start the game "Сalculator".
+```
+brain-calc
+```
 
-2. **Progression.** The player is shown a series of numbers forming an arithmetic progression. It is necessary to determine the missing number, replaced by two dots.  
+2. `brain-progression` (Progression). The player is shown a series of numbers forming an arithmetic progression. It is necessary to determine the missing number, replaced by two dots. [(Demonstration)](https://asciinema.org/a/s3EYS7RirmZ9tWOpAUjGH97eU)
 
-    Run the command `brain-progression` to start the game "Progression".
+```
+brain-progression
+```
 
-3. **Definition of an even number.** The player is shown a random number and needs to answer 'yes' if the number is even, or 'no' if it's odd.  
+3. `brain-even` (Definition of an even number). The player is shown a random number and needs to answer 'yes' if the number is even, or 'no' if it's odd [(Demonstration)](https://asciinema.org/a/C2RQeg5Is05d545vesH0Ua7xj)  
  
-    Run the command `brain-even` to start the game "Definition of an even number".
+```
+brain-even
+```
 
-4. **Finding the Greatest Common Divisor.** The player is shown two random numbers, eg '25 50'. The player must calculate and enter the greatest common divisor of these numbers.  
+4. `brain-gcd` (Finding the Greatest Common Divisor). The player is shown two random numbers, eg '25 50'. The player must calculate and enter the greatest common divisor of these numbers. [(Demonstration)](https://asciinema.org/a/Rgp8boeJBtOajKeXW9lTPpEmN)
  
-    Run the command `brain-gcd` to start the game "Finding the Greatest Common Divisor".
+```
+brain-gcd
+```
 
-5. **Definition of a prime number.** The player is shown a random number and needs to answer 'yes' if the number is prime. Otherwise, 'no' should be answered.  
+5. `brain-prime` (Definition of a prime number). The player is shown a random number and needs to answer 'yes' if the number is prime. Otherwise, 'no' should be answered. [(Demonstration)](https://asciinema.org/a/wvweybDdEblCrCRzlJ1OxRXtV)
 
-    Run the command `brain-prime` to start the game "Definition of a prime number".
-
-## Demonstration:
-
-Installation:
-
-[![asciicast](https://asciinema.org/a/iYRBEPAw2VKcWCefrPFyoiT3R.svg)](https://asciinema.org/a/iYRBEPAw2VKcWCefrPFyoiT3R)
-
-1\. Calculator:
-
-[![asciicast](https://asciinema.org/a/rOwFEkJsPNDsnDmvcv56nkA5L.svg)](https://asciinema.org/a/rOwFEkJsPNDsnDmvcv56nkA5L)
-
-2\. Progression:
-
-[![asciicast](https://asciinema.org/a/s3EYS7RirmZ9tWOpAUjGH97eU.svg)](https://asciinema.org/a/s3EYS7RirmZ9tWOpAUjGH97eU)
-
-3\. Definition of an even number:
-
-[![asciicast](https://asciinema.org/a/C2RQeg5Is05d545vesH0Ua7xj.svg)](https://asciinema.org/a/C2RQeg5Is05d545vesH0Ua7xj)
-
-4\. Finding the Greatest Common Divisor:
-
-[![asciicast](https://asciinema.org/a/Rgp8boeJBtOajKeXW9lTPpEmN.svg)](https://asciinema.org/a/Rgp8boeJBtOajKeXW9lTPpEmN)
-
-5\. Definition of a prime number:
-
-[![asciicast](https://asciinema.org/a/wvweybDdEblCrCRzlJ1OxRXtV.svg)](https://asciinema.org/a/wvweybDdEblCrCRzlJ1OxRXtV)
+```
+brain-prime
+```
