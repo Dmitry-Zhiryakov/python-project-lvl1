@@ -48,6 +48,13 @@ Install the package:
 make package-install
 ```
 
+## Playing:
+Now just run the game you like:
+
+[![asciicast](https://asciinema.org/a/fDSonYzMMna9P0cCZ4Pp1Q5v6.svg)](https://asciinema.org/a/fDSonYzMMna9P0cCZ4Pp1Q5v6)
+
+Full games list you can find below.
+
 ## Games:
 
 1. `brain-calc` (Calculator). The player is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down. [(Demonstration)](https://asciinema.org/a/rOwFEkJsPNDsnDmvcv56nkA5L)
